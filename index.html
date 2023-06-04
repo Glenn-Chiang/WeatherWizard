@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Weather Wizard</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="location-form">
+        <h2>
+            Get weather data
+        </h2>
+        <form class="location">
+            <label for="location-field">
+                Enter a Location
+            </label>
+            <input type="text" id="location-field" placeholder="e.g. Tokyo">
+            <button type="submit" class="search">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+        <div class="error"></div>
+    </section>
+
+    <section class="location-display">
+        <div class="city-country"></div>
+        <div class="date"></div>
+        <div class="time"></div>
+    </section>
+
+    <section class="weather-display">
+        <div class="temperature">
+            <i class="fa fa-thermometer"></i>
+            <span></span>
+            <button class="toggle-unit">°F</button>
+        </div>
+        <div class="description"></div>
+        <div class="time-of-day">
+            <i class="fa fa-sun-o"></i>
+            <span></span>
+        </div>
+        <div class="humidity">
+            <img src="images/humidity_icon.png">
+            <span></span>
+        </div>
+        <div class="precipitation">
+            <img src="images/precipitation_icon.png">
+            <span></span>
+        </div>
+    </section>
+    <div class="weather-img">
+        <img src="images/cloudy.png">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
